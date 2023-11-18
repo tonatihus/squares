@@ -5,7 +5,7 @@ import Universe from '../Universe/Universe';
 export const SquareContext = React.createContext();
 
 function SquarePlayground() {
-  const [squares, setSquares] = React.useState(['', '']);
+  const [squares, setSquares] = React.useState(['']);
   const addSquares = React.useCallback((sideLength) => {
     setSquares((current) => [...current, sideLength, sideLength]);
   },[]);

@@ -20,7 +20,7 @@ function Square({lado = window.innerHeight*0.7}) {
   }, []);
 
   const color = React.useMemo(() => {
-    const COLORS = ['blue', 'green', 'pink', 'red', 'orange'];
+    const COLORS = ['blue', 'green', 'pink', 'red', 'orange', 'yellow', 'purple', 'brown', 'black', 'gray', 'rebeccapurple', 'hotpink', 'cyan', 'magenta', 'lime', 'teal', 'navy', 'olive', 'maroon', 'fuchsia', 'silver'];
     return COLORS[Math.floor(Math.random() * COLORS.length)];
   }, []);
 
@@ -41,8 +41,8 @@ function Square({lado = window.innerHeight*0.7}) {
       clearInterval(intervalo);
       //cuadro.current.style.backgroundColor = 'transparent';
       cuadro.current.remove();
-      if((lado*0.3)>5)
-        addSquares(lado*0.3); 
+      if((lado*0.8)>5)
+        addSquares(lado*0.8); 
       else
         addSquares(5);
     }

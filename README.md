@@ -10,4 +10,4 @@ Estando en el directorio del proyecto, ejecutar:
 
  `npm run build`
 
- `npm serve -s build`
+ `serve -s build`
